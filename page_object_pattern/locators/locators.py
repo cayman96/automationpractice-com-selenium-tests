@@ -57,3 +57,5 @@ class MainPageLocators:
     handbagsAd = '//*[@id="htmlcontent_home"]/ul/li[5]/a/img'
     seleniumFrameworkBtn = '//*[@id="cmsinfo_block"]/div[1]/ul/li[2]/div/p/a'
 
+class ContactUsLocators:
+    sendMsgForm = '//*[@id="center_column"]/form'
