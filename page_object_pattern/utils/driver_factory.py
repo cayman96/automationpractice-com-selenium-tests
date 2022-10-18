@@ -20,6 +20,7 @@ class DriverFactory:
             # jebać firefoxa jak ja cie kurwo nienawidze aaaaaaaaaaaaaaaaaa
             # kurwa token w kodzie - zły pomysł!
             os.environ['GH_TOKEN'] = GeckoToken.get_token()
+            # ale token w osobnym pliku, aaaaa to co innego
             return webdriver.Firefox(service=ffService(GeckoDriverManager().install()))
         else:
             raise Exception("Please provide valid driver name")

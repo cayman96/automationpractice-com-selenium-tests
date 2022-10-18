@@ -26,3 +26,10 @@ class MainPage:
         wait.until(expected_conditions.visibility_of_element_located((By.XPATH, ContactUsLocators.sendMsgForm)))
         allure.attach(self.driver.get_screenshot_as_png(), name="click on contact us button",
                       attachment_type=AttachmentType.PNG)
+
+    @allure.step("Klikam w przycisk 'Women'")
+    def click_on_women(self, wait):
+        self.logger.info("Klikam w przycisk 'Women'")
+        self.driver.find_element(By.XPATH, HeaderLocators.womenBtn).click()
+        allure.attack(self.driver.get_screenshot_as_png(), name="click on women button",
+                      attachment_type=AttachmentType.PNG)
